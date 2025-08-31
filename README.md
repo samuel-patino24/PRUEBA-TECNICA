@@ -1,6 +1,6 @@
 # PRUEBA-TECNICA
 
-Este proyecto es una prueba técnica que integra **frontend** y **backend** utilizando tecnologías modernas de desarrollo web, con una base de datos simulada.  
+Este proyecto es una prueba técnica que integra **frontend** y **backend** utilizando tecnologías modernas de desarrollo web, con una base de datos simulada cabe aclar que el codigo de la base de datos lo hice pero no se me fue posible conectarlo.
 
 ---
 
