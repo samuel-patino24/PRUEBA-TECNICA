@@ -1,0 +1,155 @@
+/* estilos generales  todo se usa con clases . */
+body {
+    font-family: 'Arial', sans-serif;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+/* aca empiezan los estilos del formulario */
+
+.form {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    outline: 1px solid #447ED6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-estructura {
+    position: relative;
+    width: 100%;
+}
+
+.titulos {
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+
+.logo-gco {
+    font-size: 48px;
+    font-weight: bold;
+    color: #447ED6;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(68, 126, 214, 0.5);
+}
+
+.Registro {
+    color: #333;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.Registro2 {
+    color: #666;
+    font-size: 18px;
+}
+
+.input-Area {
+    margin-top: 40px;
+}
+
+.form-inp {
+    padding: 11px 25px;
+    background: transparent;
+    border: 1px solid #ccc;
+    line-height: 100%;
+    border-radius: 8px;
+    transition: all ease-in-out .3s;
+}
+
+.form-inp:focus-within {
+    border: 1px solid #A1DB89;
+}
+
+.form-inp input,
+.form-inp select {
+    width: 100%;
+    background: none;
+    font-size: 14px;
+    color: #333;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.form-inp input:focus,
+.form-inp select:focus {
+    outline: none;
+}
+
+.form-inp select option {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* estilos del boton */
+
+.submit-button-cvr {
+    margin-top: 20px;
+}
+
+.boton {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    background-color: #447ED6;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+    padding: 14px 13px 12px 13px;
+    border: 0;
+    outline: 1px solid #447ED6;
+    border-radius: 8px;
+    line-height: 100%;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.boton:hover {
+    background-color: #2b61b2;
+    color: #ffffff;
+}
+
+.form-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.form-grid .form-group {
+    position: relative;
+}
+
+.form-grid .form-group label {
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    background: #ffffff;
+    color: #666;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+/* estilos responsivos */
+@media (max-width: 640px) {
+    .form-grid {
+        grid-template-columns: 100%;
+    }
+    .Registro {
+        font-size: 32px;
+    }
+    .Registro2 {
+        font-size: 16px;
+    }
+}

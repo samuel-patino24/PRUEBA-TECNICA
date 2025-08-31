@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario GCO</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+     <div class="form">
+        <form onsubmit="handleFormSubmission(event)" id="gcoForm">
+            <div class="form-estructura">
+                <div class="titulos">
+                    <div class="logo-gco">GCO</div>
+                    <br>
+                    <div class="Registro">Registro GCO</div>
+                    <br>
+                    <div class="Registro2">Por favor, complete sus datos</div>
+                </div>
+                <div class="input-area">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="identificacion">Tipo de Identificación</label>
+                            <div class="form-inp">
+                                <select id="identificacion" name="identificacion" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="cc">Cédula de Ciudadanía</option>
+                                    <option value="ti">Tarjeta de Identidad</option>
+                                    <option value="ce">Cédula de Extranjería</option>
+                                    <option value="pasaporte">Pasaporte</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numeroIdentificacion">Número de Identificación</label>
+                            <div class="form-inp"><input type="number" id="numeroIdentificacion" name="numeroIdentificacion" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="nombres">Nombres</label>
+                            <div class="form-inp"><input type="text" id="nombres" name="nombres" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <div class="form-inp"><input type="text" id="apellidos" name="apellidos" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                            <div class="form-inp"><input type="date" id="fechaNacimiento" name="fechaNacimiento" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección</label>
+                            <div class="form-inp"><input type="text" id="direccion" name="direccion" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad</label>
+                            <div class="form-inp">
+                                <select id="ciudad" name="ciudad" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="bogota">Bogotá</option>
+                                    <option value="medellin">Medellín</option>
+                                    <option value="cali">Cali</option>
+                                    <option value="barranquilla">Barranquilla</option>
+                                    <option value="cartagena">Cartagena</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="departamento">Departamento</label>
+                            <div class="form-inp">
+                                <select id="departamento" name="departamento" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="antioquia">Antioquia</option>
+                                    <option value="cundinamarca">Cundinamarca</option>
+                                    <option value="valle-del-cauca">Valle del Cauca</option>
+                                    <option value="atlantico">Atlántico</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pais">País</label>
+                            <div class="form-inp">
+                                <select id="pais" name="pais" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="colombia">Colombia</option>
+                                    <option value="mexico">México</option>
+                                    <option value="argentina">Argentina</option>
+                                    <option value="chile">Chile</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="marcaAfiliacion">Marca de Afiliación</label>
+                            <div class="form-inp">
+                                <select id="marcaAfiliacion" name="marcaAfiliacion" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="Americanino">Americanino</option>
+                                    <option value="American Eagle">American Eagle</option>
+                                    <option value="chevignon">Chevignon</option>
+                                    <option value="esprit">Esprit</option>
+                                    <option value="naf naf">Naf Naf</option>
+                                    <option value="rifle">Rifle</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-button-cvr">
+                    <button class="boton" id="boton">REGISTRAR</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/controlador.js"  type="module"></script>
+</body>
+</html>
