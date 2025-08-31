@@ -34,7 +34,8 @@ Antes de ejecutar el proyecto, asegúrate de tener instalados:
  Por defecto, la aplicación iniciará en: http://localhost:8080.
 3. ejecutar front y diligenciar formulario
 ---
-
+en mi git hub estan los repositorio back y fron donde se pueden revisar los comits y el avance 
+---
 Autor
 
 Samuel David Patiño Arango
